@@ -262,6 +262,9 @@ def run():
 
 
     def extracttime(arr, col):
+        global timenow
+        global stringnow
+        global currenttime
         output = []
         for i in arr:
             holder = []
@@ -418,6 +421,8 @@ def run():
     ######################################################################################################
     async def watch(empty1, empty2, empty3, empty4):
         global currenttime
+        global timenow
+        global stringnow
         while True:
             empty1.header("go up hill")
             for i in range(len(extractcolumn(downhillbus, 0))):
