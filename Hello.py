@@ -422,7 +422,7 @@ def run():
             empty1.header("go up hill")
             for i in range(len(extractcolumn(downhillbus, 0))):
                 timenow = datetime.now()
-                # timenow = timenow + timedelta(hours=8)
+                timenow = timenow + timedelta(hours=8)
                 stringnow = timenow.strftime("%H:%M:%S")
                 currenttime = turnintominutes(stringnow)
                 godownbustable = pd.DataFrame(
@@ -457,7 +457,7 @@ def run():
             empty3.header("go down hill")
             for i in range(len(extractcolumn(uphillbus, 0))):
                 timenow = datetime.now()
-                # timenow = timenow + timedelta(hours=8)
+                timenow = timenow + timedelta(hours=8)
                 stringnow = timenow.strftime("%H:%M:%S")
                 currenttime = turnintominutes(stringnow)
                 goupbustable = pd.DataFrame(
